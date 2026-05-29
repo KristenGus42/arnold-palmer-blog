@@ -1,0 +1,73 @@
+/*
+  Kristen Gustafson
+  October 2nd 2023
+  Section AC Elias Belzberg and Kasten Dylan Welsh
+
+  This is a CSS styling file to provide style rules
+  for two html files. This file styles "about" and
+  "blog". There is a orange and yellow color theme
+  throughout both of these pages.
+*/
+body {
+  background-color: #FFDD3C;
+  font-family: "Kiwi Maru", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  color: #B72E00;
+}
+
+img {
+  height: 200px;
+}
+
+h4, h5, p {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+h5 {
+  margin: 0%;
+}
+
+main, .blog-title-date {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+h3, h1, h2, .picture {
+  padding: 2%;
+}
+
+.blog-post {
+  border-radius: 25px;
+  margin-top: 3%;
+  padding-bottom: 3%;
+}
+
+.blog-title-date {
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 0%;
+}
+
+#description, .blog-post {
+  background-color: #F1F981;
+}
+
+#title-section, #description, #community-title {
+  text-align: center;
+}
+
+#description {
+  font-size: medium;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #B72E00;
+}
+
+#community-title, #title-section {
+  font-size: large;
+  padding-bottom: 1%;
+}
