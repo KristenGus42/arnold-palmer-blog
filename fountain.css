@@ -1,0 +1,104 @@
+/*
+Kristen Gustafson
+October 2nd 2023
+Section AC Elias Belzberg and Kasten Dylan Welsh
+
+This is a page that styles fountainstation.html. This page ensures
+elements are organized correctly. This page does not have a color theme
+and mostly styles separate elements of a game.
+*/
+
+body {
+  background-image: url("backgroundcafe.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body, main, header {
+  display: flex;
+  justify-content: center;
+}
+
+main, header {
+  align-items: center;
+  flex-direction: column;
+}
+
+header h1, header h2 {
+  color: #B72E00;
+  margin: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+header {
+  border-radius: 25px;
+  background-color: #F1F981;
+  height: 175px;
+  border: solid 3px #B72E00;
+  padding-bottom: 50px;
+}
+
+.lemonade, .tea, .empty, .stirred {
+  width: 200px;
+  height: 60px;
+  opacity: 60%;
+  border-right: 7px solid black;
+  border-left: 7px solid black;
+}
+
+button {
+  width: 50px;
+  margin: auto;
+}
+
+.tea, #tea-btn {
+  background-color: #661911;
+}
+
+.lemonade, #lemonade-btn {
+  background-color: #cafc03;
+}
+
+.empty {
+  background-color: #78d5ed;
+}
+
+#lemonade-btn, #tea-btn {
+  width: 50px;
+  height: 50px;
+  margin: 15px;
+}
+
+#buttons {
+  background-color: #5A5A5A;
+  padding: 30px;
+}
+
+#dispenser {
+  width: 50px;
+  height: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+#drink section:nth-child(5) {
+  border-bottom: 7px solid black;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#drink section:nth-child(1) {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#drink {
+  margin-top: 50px;
+}
+
+#flow {
+  height: 100px;
+  width: 15px;
+  background-color: none;
+}

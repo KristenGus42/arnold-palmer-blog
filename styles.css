@@ -4,8 +4,8 @@
   Section AC Elias Belzberg and Kasten Dylan Welsh
 
   This is a CSS styling file to provide style rules
-  for two html files. This file styles "about" and
-  "blog". There is a orange and yellow color theme
+  for two html files. This file styles "index.html" and
+  "citations.html". There is a orange and yellow color theme
   throughout both of these pages.
 */
 body {
@@ -30,8 +30,15 @@ h5 {
   margin: 0%;
 }
 
-main, .blog-title-date {
+#petition, #input-section {
+  justify-content: center;
+}
+
+#input-section article, main, .blog-title-date, header, #input-section, #petition, #games {
   display: flex;
+}
+
+main, .blog-title-date, header, #input-section, #petition, #games {
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -40,10 +47,64 @@ h3, h1, h2, .picture {
   padding: 2%;
 }
 
+header, #input-section, #petition, #games {
+  align-items: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#input-section {
+  flex-wrap: nowrap;
+  padding: 40px;
+}
+
+#textbox {
+  width: 85%;
+}
+
+#citations, #citations h2 {
+  text-align: left;
+}
+
+#games h2, #games h3 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#input-section label {
+  margin-top: 30px;
+}
+
+input {
+  padding: 10px;
+}
+
+textarea {
+  font-family: inherit;
+  font-size: 18px;
+}
+
+#input-section article input {
+  margin: 20px;
+}
+
 .blog-post {
-  border-radius: 25px;
   margin-top: 3%;
   padding-bottom: 3%;
+}
+
+#btn-post {
+  background-color: #B72E00;
+  color: #F1F981;
+  margin-top: 30px;
+  width: 400px;
+  height: 30px;
+}
+
+#btn-post, .blog-post {
+  border-radius: 25px;
 }
 
 .blog-title-date {
@@ -56,18 +117,20 @@ h3, h1, h2, .picture {
   background-color: #F1F981;
 }
 
-#title-section, #description, #community-title {
+#title-section, #description, h2, h1 {
   text-align: center;
 }
 
 #description {
   font-size: medium;
-  border-style: solid;
-  border-width: 10px;
-  border-color: #B72E00;
+  border: solid 10px #B72E00;
 }
 
-#community-title, #title-section {
+#title-section {
   font-size: large;
   padding-bottom: 1%;
+}
+
+h2 {
+  font-size: 28px;
 }
